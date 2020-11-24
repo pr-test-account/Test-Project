@@ -19,21 +19,22 @@
 
 1. Main 클래스: GameManager 클래스의 인스턴스를 생성해 게임을 실행
 
-2. Components.NumberSetCreateHandler 클래스: 게임에 필요한 3자리 숫자를 생성
+2. components.NumberSetCreateHandler 클래스: 게임에 필요한 3자리 숫자를 생성
 
    * getNumberSet(): 생성한 3자리 숫자를 길이 3의 정수형 배열로 반환하는 메서드
    * generateNumberSet(): 1~9 사이의 무작위 숫자 3개를 인스턴스 변수에 저장하는 메서드
      * createRandomNumber(): 1~9 사이의 무작위 숫자를 반환하는 메서드
 
-3. Components.InputNumberHandler 클래스: 사용자 입력을 받아 게임에 사용할 수 있도록 처리
+3. components.InputNumberHandler 클래스: 사용자 입력을 받아 게임에 사용할 수 있도록 처리
 
    * getNumberSet(): 입력받은 3자리 숫자를 길이 3의 정수형 배열로 반환하는 메서드
 
    * inputNumber(): 3자리 숫자를사용자 입력으로 받아 인스턴스 변수에 저장하는 메서드
-     * isValidNumbers(): 입력받은 숫자의 정합성을 판정하는 메서드
-       * isNotNull(): 입력받은 숫자가 공백이 아닌지 판단하는 메서드
-       * isFitLength(): 입력받은 숫자의 길이가 3자리인지 판단하는 메서드
-       * isTrueNumbers(): 입력받은 숫자가 정수형으로 파싱 가능한지 판단하는 메서드
+     * isValidNumbers(String): 입력받은 숫자의 정합성을 판정하는 메서드
+       * isNotNull(String): 입력받은 숫자가 공백이 아닌지 판단하는 메서드
+       * isFitLength(String): 입력받은 숫자의 길이가 3자리인지 판단하는 메서드
+       * isTrueNumbers(String): 입력받은 숫자가 정수형으로 파싱 가능한지 판단하는 메서드
+     * saveNumbers(String): 입력받은 숫자를 인스턴스 변수에 저장하는 메서드
 
 4. GameManager 클래스: 게임의 시작과 종료, 전체적인 흐름을 담당
 
