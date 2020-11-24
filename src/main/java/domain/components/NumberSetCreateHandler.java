@@ -4,7 +4,8 @@ import java.util.Random;
 
 public class NumberSetCreateHandler  {
     Random random;
-    final int RANDOM_RANGE = 10;
+    final int RANDOM_MIN = 1;
+    final int RANDOM_MAX = 2;
     final int NUMBER_SET_SIZE = 3;
     int[] numberSet;
 
@@ -22,6 +23,6 @@ public class NumberSetCreateHandler  {
     }
 
     private int createRandomNumber(){
-        return random.nextInt(RANDOM_RANGE);
+        return random.nextInt(RANDOM_MAX) + RANDOM_MIN;
     }
 }
