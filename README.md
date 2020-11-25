@@ -31,7 +31,7 @@
 
    * inputNumber(): 3자리 숫자를사용자 입력으로 받아 인스턴스 변수에 저장하는 메서드
      * isValidNumbers(String): 입력받은 숫자의 정합성을 판정하는 메서드
-       * isNotNull(String): 입력받은 숫자가 공백이 아닌지 판단하는 메서드
+       * isNotNull(String): 입력받은 숫자가 Null인지 아닌지 판단하는 메서드
        * isFitLength(String): 입력받은 숫자의 길이가 3자리인지 판단하는 메서드
        * isTrueNumbers(String): 입력받은 숫자가 정수형으로 파싱 가능한지 판단하는 메서드
      * saveNumbers(String): 입력받은 숫자를 인스턴스 변수에 저장하는 메서드
